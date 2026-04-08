@@ -16,6 +16,16 @@ a small struts web project to understand the basics
 
 # Définitions
 
+## Javabean
+Un JavaBean est une classe Java standardisée conçue pour être un composant logiciel réutilisable.  Elle suit des conventions strictes :
+- Constructeur sans argument : Elle doit posséder un constructeur public par défaut.
+  ####
+- Accesseurs (Getters) et Mutateurs (Setters) : Les propriétés (champs privés) sont accessibles via des méthodes publiques nommées getNomPropriete() et setNomPropriete().
+####
+- Sérialisable (optionnel mais courant) : Elle implémente souvent l'interface Serializable pour permettre la persistance de son état.
+###
+Son but principal est d'encapsuler des données (comme les champs d'un formulaire ou des enregistrements de base de données) en un seul objet, facilitant ainsi leur manipulation, leur transfert (par exemple, entre une servlet et une JSP) et leur réutilisation dans différentes parties d'une application.
+
 ## web.xml vs struts-config.xml
 web.xml agit comme le descripteur de déploiement standard de l'application web, servant à créer la connexion entre le conteneur web et l'application, et est lu par le conteneur lors du démarrage du serveur.  struts-config.xml, en revanche, est le descripteur de déploiement spécifique à l'application Struts 1, utilisé pour établir la connexion entre la vue et le contrôleur, et est lu par la méthode init() de la servlet ActionServlet.
 

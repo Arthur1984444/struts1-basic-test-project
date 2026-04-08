@@ -15,6 +15,8 @@ a small struts web project to understand the basics
 # FR :
 
 # Définitions
+
+## web.xml vs struts-config.xml
 web.xml agit comme le descripteur de déploiement standard de l'application web, servant à créer la connexion entre le conteneur web et l'application, et est lu par le conteneur lors du démarrage du serveur.  struts-config.xml, en revanche, est le descripteur de déploiement spécifique à l'application Struts 1, utilisé pour établir la connexion entre la vue et le contrôleur, et est lu par la méthode init() de la servlet ActionServlet.
 
 Les différences principales résident dans leur rôle et leur moment de chargement :

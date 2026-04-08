@@ -1,0 +1,29 @@
+<web-app
+        version="4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee " xmlns="">
+    <!--xmlns="http://xmlns.jcp.org/xml/ns/javaee" -->
+
+
+
+    <display-name>Struts test</display-name>
+
+    <servlet>
+        <!-- donc Je crée une instance du servlet ActionServlet et je l'appelle action -->
+        <servlet-name>action</servlet-name>
+        <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+
+        <init-param>
+            <param-name>config</param-name>
+            <param-value>/WEB-INF/struts-config.xml</param-value>
+        </init-param>
+
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <!-- ainsi toutes les URLs qui finissent en .do vont vers le servlet nommé action -->
+        <servlet-name>action</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+
+</web-app>

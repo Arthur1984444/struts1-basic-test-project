@@ -6,6 +6,7 @@
 
     <form-beans>
         <form-bean name="helloForm" type="com.example.HelloForm"/>
+        <form-bean name="messageForm" type="com.example.MessageForm"/>
     </form-beans>
 
     <action-mappings>
@@ -15,6 +16,12 @@
                 input="/index.jsp">
 
             <forward name="success" path="/result.jsp"/>
+        </action>
+        <action path="/message"
+                type="com.example.MessageAction"
+                name="messageForm"
+                input="index.jsp">
+            <forward name="test" path="/message.jsp"/>
         </action>
     </action-mappings>
 

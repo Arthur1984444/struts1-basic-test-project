@@ -3,12 +3,12 @@
 
 <head>
 <title>
-test struts1 result
+test struts1 result2
 </title>
 
 <body>
-    <h2>Résultat</h2>
-    ${message}
+    <h2>Votre message</h2>
+    ${Message}
 
 </body>
 </html>

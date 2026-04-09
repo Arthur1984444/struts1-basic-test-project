@@ -33,4 +33,12 @@ Les différences principales résident dans leur rôle et leur moment de chargem
 
 web.xml définit la servlet ActionServlet et son mapping d'URL (généralement *.do), agissant comme le point d'entrée unique du framework pour le conteneur.
 struts-config.xml configure les mappages d'actions spécifiques, les formulaires (ActionForms), les résultats et les redirections, définissant ainsi la logique métier et les vues du modèle MVC.
-Le flux de fonctionnement est séquentiel : lorsque le serveur démarre, le conteneur lit web.xml pour charger et mapper la servlet ActionServlet, qui initie ensuite le chargement de struts-config.xml pour déterminer comment traiter les requêtes entrantes vers les actions définies. 
+Le flux de fonctionnement est séquentiel : lorsque le serveur démarre, le conteneur lit web.xml pour charger et mapper la servlet ActionServlet, qui initie ensuite le chargement de struts-config.xml pour déterminer comment traiter les requêtes entrantes vers les actions définies.
+
+# Résumé
+- Strust-config agit comme router.
+- ActionServlet agit comme controller.
+- Action agit comme Model (logique métier).
+####
+## schéma :
+Requête → web.xml (route vers ActionServlet) → struts-config.xml (décide l’Action) → Action (logique métier) → Forward → Vue (JSP)

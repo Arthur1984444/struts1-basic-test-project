@@ -3,7 +3,13 @@
         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee " xmlns="">
     <!--xmlns="http://xmlns.jcp.org/xml/ns/javaee" -->
 
-
+    <!-- Force l'encodage du texte en utf-8 permettant d'éviter des problèmes d'accents -->
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <page-encoding>UTF-8</page-encoding>
+        </jsp-property-group>
+    </jsp-config>
 
     <display-name>Struts test</display-name>
 
@@ -25,5 +31,12 @@
         <servlet-name>action</servlet-name>
         <url-pattern>*.do</url-pattern>
     </servlet-mapping>
+
+    <!-- Renvoie sur la page index si page inexistante -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/index.jsp</location>
+        <path>/</path>
+    </error-page>
 
 </web-app>

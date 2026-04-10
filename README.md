@@ -1,4 +1,4 @@
-# struts1test
+# struts1 basic test project
 
 ## repository maven :
 (https://repo.maven.apache.org/maven2/struts/struts/)
@@ -123,3 +123,13 @@ Pom.xml est un fichier permettant à maven de comprendre quelles dépendances ut
 ####
 ## schéma :
 Requête → web.xml (route vers ActionServlet) → struts-config.xml (décide l’Action) → Action (logique métier) → Forward → Vue (JSP)
+
+#Sources/Links :
+- https://www.oracle.com/webfolder/technetwork/jsc/xml/ns/javaee/index.html
+- https://stackoverflow.com/questions/17645028/problems-with-accented-characters-in-jsp
+- https://stackoverflow.com/questions/13858183/why-do-we-need-global-forwards-and-global-exceptions-in-struts
+- https://struts.apache.org/core-developers/web-xml
+- https://jakarta.ee/specifications/servlet/4.0/apidocs/
+- https://jetty.org/docs/jetty/10/programming-guide/maven-jetty/jetty-maven-helloworld.html
+- https://struts.apache.org/maven-archetypes/
+- https://struts.apache.org/getting-started/

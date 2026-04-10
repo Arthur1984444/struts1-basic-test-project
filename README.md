@@ -124,7 +124,7 @@ Pom.xml est un fichier permettant à maven de comprendre quelles dépendances ut
 ## schéma :
 Requête → web.xml (route vers ActionServlet) → struts-config.xml (décide l’Action) → Action (logique métier) → Forward → Vue (JSP)
 
-#Sources/Links :
+# Sources/Links :
 - https://www.oracle.com/webfolder/technetwork/jsc/xml/ns/javaee/index.html
 - https://stackoverflow.com/questions/17645028/problems-with-accented-characters-in-jsp
 - https://stackoverflow.com/questions/13858183/why-do-we-need-global-forwards-and-global-exceptions-in-struts

@@ -9,6 +9,14 @@
         <form-bean name="messageForm" type="com.example.MessageForm"/>
     </form-beans>
 
+    <!-- Permet d'appeler la page d'accueil via son nom -->
+    <global-forwards>
+        <forward
+                name="index"
+                path="/index.jsp"/>
+    </global-forwards>
+
+    <!-- Permet d'appeler différentes actions via leur nom -->
     <action-mappings>
         <action path="/hello"
                 type="com.example.HelloAction"
